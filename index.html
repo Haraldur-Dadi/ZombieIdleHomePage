@@ -12,7 +12,8 @@
     </head>
     <body>
         <header id="header" class="header">
-            <div class="header-bar">
+            <img class="header-img">
+            <div id="header-bar" class="header-bar">
                 <a class="logo" href=""><img class="logo-img" src="ZombieIdleLogo.png" alt="Logo for ZombieIdle, headshot of a zombie"></a>
                 <p class="name">Zombie Idle</p>
                 <nav class="nav"onclick="menu_icon_animation(this)">
@@ -38,10 +39,10 @@
         </main>
         <footer class="footer">
             <div class="left-footer">
-
+                <p>Hello World</p>
             </div>
             <div class="right-footer">
-
+                <p>Email: </p>
             </div>
         </footer>
 
@@ -49,9 +50,10 @@
             window.onscroll = function() {myFunction()};
             
             var header = document.getElementById("header");
+            var header_bar = document.getElementById("header-bar")
             var body = document.getElementById("main-content")
             
-            var sticky = header.offsetTop;
+            var sticky = 16;
 
             function myFunction() {
               if (window.pageYOffset > sticky) {
