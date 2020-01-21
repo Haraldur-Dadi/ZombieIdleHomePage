@@ -16,9 +16,7 @@ body {
 /* Header */
 .header {
     width: 100vw;
-    
     margin: 0;
-    padding: 0;
 }
 
 .header-img {
@@ -27,10 +25,10 @@ body {
 
 .header-bar {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 
     height: 100px;
-    padding: 1em;
+    padding: 1em 0;
 
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(184,184,201,1) 35%, rgba(118,124,125,1) 100%);
 }
@@ -44,8 +42,8 @@ body {
 }
 
 .logo {
-    margin: auto 0;
-    height: 100px;
+    margin: auto;
+    height: 75px;
 }
 
 .logo-img {
@@ -54,7 +52,7 @@ body {
 
 .name {
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     line-height: 100px;
@@ -116,8 +114,6 @@ body {
 .footer {
     width: 100vw;
     height: 100px;
-
-    padding: 1em;
 
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(184,184,201,1) 35%, rgba(118,124,125,1) 100%);
 }
