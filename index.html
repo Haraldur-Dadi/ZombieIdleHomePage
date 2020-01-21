@@ -12,18 +12,22 @@
     </head>
     <body>
         <header id="header" class="header">
-            <img class="header-img">
             <div id="header-bar" class="header-bar">
                 <a class="logo" href=""><img class="logo-img" src="ZombieIdleLogo.png" alt="Logo for ZombieIdle, headshot of a zombie"></a>
                 <p class="name">Zombie Idle</p>
-                <nav class="nav"onclick="menu_icon_animation(this)">
+                <nav id="nav" class="nav" onclick="menu_icon_animation()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </nav>
             </div>
+            <nav id="nav-menu" class="nav-menu">
+                <a href="#devblog">Devblog</a>
+                <a href="About-the-game.html">About the game</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
-        <main id="main-content" class="content">
+        <main id="main-content devblog" class="content">
             <p class="title">Dev Blog</p>
             <h3>On Scroll Sticky Header</h3>
             <p>The header will stick to the top when you reach its scroll position.</p>
@@ -37,7 +41,8 @@
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         </main>
-        <footer class="footer">
+
+        <footer id="contact" class="footer">
             <div class="left-footer">
                 <p>Hello World</p>
             </div>
@@ -66,8 +71,11 @@
             }
         </script>
         <script>
-            function menu_icon_animation(menu_icon) {
-                menu_icon.classList.toggle("change");
+            nav_icon = document.getElementById("nav");
+            nav_bar = document.getElementById("nav-bar");
+            function menu_icon_animation() {
+                nav_icon.classList.toggle("change_nav_icon");
+                nav_bar.classList.toggle("show_nav_bar")
             }
         </script>
     </body>

@@ -19,18 +19,14 @@ body {
     margin: 0;
 }
 
-.header-img {
-    display: none;
-}
 
 .header-bar {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 
     height: 100px;
-    padding: 1em 0;
 
-    background-image: linear-gradient(180deg, rgba(153,245,68,1) 0%, rgba(111,221,47,1) 35%, rgba(27,201,22,1) 100%), linear-gradient(180deg, rgba(153,245,68,1) 0%, rgba(111,221,47,1) 35%, rgba(27,201,22,1) 100%);
+    background-image: linear-gradient(180deg, rgba(153,245,68,1) 0%, rgba(111,221,47,1) 65%, rgba(27,201,22,1) 100%), linear-gradient(180deg, rgba(153,245,68,1) 0%, rgba(111,221,47,1) 65%, rgba(27,201,22,1) 100%);
     background-clip: content-box, padding-box;
 }
 
@@ -42,14 +38,7 @@ body {
     right: 0;
 }
 
-.sticky-header .header-img {
-    display: none;
-}
-
 .sticky-header .header-bar {
-    padding: 0;
-
-    background-image: linear-gradient(180deg, rgba(153,245,68,1) 0%, rgba(111,221,47,1) 35%, rgba(27,201,22,1) 100%);
     background-clip: content-box;
 }
 
@@ -82,6 +71,11 @@ body {
     margin: auto;
 
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nav-menu {
+    display: none;
 }
 
 .bar1, .bar2, .bar3 {
@@ -92,18 +86,20 @@ body {
     transition: 0.4s;
 }
 
-    /* Animation for menu icon */
-.change .bar1 {
+    /* Animation for nav icon */
+.change_nav_icon .bar1 {
     transform: rotate(-45deg) translate(-11px, 12px);
 }
   
-.change .bar2 {
-    opacity: 0;
+.change_nav_icon .bar2 {
+    transform: translate(0px, 50px);
 }
 
-.change .bar3 {
+.change_nav_icon .bar3 {
     transform: rotate(45deg) translate(-11px, -12px);
 }
+
+    /* Animation for showing nav bar*/
 
 /* Main */
 .content {
